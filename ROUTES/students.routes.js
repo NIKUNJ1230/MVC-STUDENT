@@ -8,5 +8,14 @@ stdrouter.get("/", (req, res) => {
   console.log(req.query.category);
   res.send("Welcome to the express server");
 });
+stdrouter.get("/home", (req, res) => {
+  res.render("index");
+});
+
+stdrouter.get("/login", (req, res) => {
+  res.render("login");
+});
+
+stdrouter.post("/add", check_data, student_add);
 
 module.exports = stdrouter;
