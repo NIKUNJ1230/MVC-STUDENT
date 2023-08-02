@@ -1,5 +1,6 @@
 const {Router} = require('express');
-
+const {student_add} = require('../CONTROLLERS/student.controler');\
+const 
 
 let stdrouter = Router();
 

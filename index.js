@@ -1,5 +1,6 @@
 const express = require('express');
 const connect = require('./CONFIG/database.js');
+const students = require('./MODELS/students.schema.js');
 const app = express();
 
 app.use(express.json());
