@@ -16,6 +16,6 @@ stdrouter.get("/login", (req, res) => {
   res.render("login");
 });
 
-stdrouter.post("/add", check_data, student_add);
+// stdrouter.post("/add",  student_add);
 
 module.exports = stdrouter;
